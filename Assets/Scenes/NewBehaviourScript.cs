@@ -5,7 +5,8 @@ using UnityEngine;
 public class NewBehaviourScript : MonoBehaviour
 {
     // Start is called before the first frame update
-    // 나는 한글이에용
+    // 한글한글
+
     void Start()
     {
         
