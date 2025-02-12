@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 429511921}
   - component: {fileID: 429511920}
   - component: {fileID: 429511919}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -402,7 +402,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 3
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -427,9 +427,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 18
-  moveDrag: 2
+  moveDrag: 0.07
   maxMoveVel: 5.7
   rigid: {fileID: 1229129349}
+  jumpSpeed: 14.6
+  maxJumpVel: 5
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!114 &1229129351
 MonoBehaviour:
   m_ObjectHideFlags: 0
