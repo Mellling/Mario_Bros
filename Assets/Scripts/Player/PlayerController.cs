@@ -21,4 +21,11 @@ public class PlayerController : MonoBehaviour
         moveController.Move(moveDir);   // 플레이어 좌우 이동 메서드 호출
     }
     #endregion
+
+    #region Jump
+    private void OnJump(InputValue value)
+    {
+        moveController.Jump();  // 플레이어 위로 점프 메서드 호출
+    }
+    #endregion
 }
