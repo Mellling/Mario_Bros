@@ -41,7 +41,7 @@ public class PlayerMoveController : MonoBehaviour
     {
         this.moveDir = moveDir; // 현재 이동 방향 저장
 
-        // 현재 속도가 최대 속도(maxMoveVel) 이하인 경우에만 힘을 가한다.
+        // 현재 x축 속도가 최대 속도(maxMoveVel) 이하인 경우에만 힘을 가한다.
         if (Mathf.Abs(rigid.velocity.x) <= maxMoveVel)
             // Time.deltaTime을 곱해 프레임 독립적인 움직임 구현
             rigid.AddForce(moveDir * moveSpeed * Time.deltaTime, ForceMode2D.Impulse);
